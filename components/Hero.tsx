@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { client, urlFor } from '@/lib/sanity'
+import HeroCTA from '@/components/HeroCTA'
 
 async function getHeroData() {
   const [designer, settings] = await Promise.all([
@@ -84,6 +85,8 @@ export default async function Hero() {
           </p>
           <div className="h-px flex-1 max-w-[80px]" style={{ background: 'rgba(201,169,110,0.5)' }} />
         </div>
+
+        <HeroCTA />
 
       </div>
 
