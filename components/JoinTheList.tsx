@@ -25,7 +25,7 @@ export default function JoinTheList() {
     setError(null)
 
     try {
-      const res = await fetch('/api/mailchimp', {
+      const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
