@@ -28,7 +28,7 @@ export default function Nav() {
             <span className="font-display text-dr-cream text-xs tracking-[0.25em] uppercase leading-tight">
               Designer Residence
             </span>
-            <span className="font-serif text-dr-cream/40 text-[9px] tracking-[0.2em] uppercase leading-tight mt-0.5">
+            <span className="font-serif text-dr-cream/75 text-[9px] tracking-[0.2em] uppercase leading-tight mt-0.5">
               Tribeca
             </span>
           </div>
@@ -41,7 +41,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-dr-cream/70 hover:text-dr-gold transition-colors duration-300"
+            className="text-dr-cream/80 hover:text-dr-gold transition-colors duration-300"
           >
             <InstagramIcon />
           </Link>

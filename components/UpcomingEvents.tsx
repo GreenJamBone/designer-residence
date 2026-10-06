@@ -82,14 +82,14 @@ export default async function UpcomingEvents() {
                     <span className="font-display text-dr-gold/70 text-[10px] tracking-widest uppercase mt-1">
                       {month}
                     </span>
-                    <span className="font-display text-dr-cream/30 text-[9px] tracking-widest mt-1">
+                    <span className="font-display text-dr-cream/80 text-[9px] tracking-widest mt-1">
                       {year}
                     </span>
                   </div>
 
                   {/* Content column */}
                   <div>
-                    <p className="font-display text-dr-cream/40 text-[10px] tracking-widest uppercase mb-3">
+                    <p className="font-display text-dr-cream/75 text-[10px] tracking-widest uppercase mb-3">
                       {weekday} · {time}
                       {event.location?.name ? ` · ${event.location.name}` : ''}
                     </p>
@@ -99,13 +99,13 @@ export default async function UpcomingEvents() {
                     </h3>
 
                     {descText && (
-                      <p className="font-serif font-light text-dr-cream/60 text-base leading-relaxed mb-6 max-w-lg">
+                      <p className="font-serif font-light text-dr-cream/75 text-base leading-relaxed mb-6 max-w-lg">
                         {descText.length > 180 ? descText.slice(0, 180).trimEnd() + '…' : descText}
                       </p>
                     )}
 
                     {event.location?.address && (
-                      <p className="font-display text-dr-cream/30 text-[10px] tracking-widest uppercase mb-6">
+                      <p className="font-display text-dr-cream/80 text-[10px] tracking-widest uppercase mb-6">
                         {event.location.address}
                         {event.location.notes ? ` · ${event.location.notes}` : ''}
                       </p>

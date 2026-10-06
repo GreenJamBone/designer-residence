@@ -102,7 +102,7 @@ export default async function DesignerPage({ params }: Props) {
             {designer.name}
           </h1>
           {designer.tagline && (
-            <p className="font-display text-dr-cream/50 text-xs tracking-widest uppercase mt-4">
+            <p className="font-display text-dr-cream/80 text-xs tracking-widest uppercase mt-4">
               {designer.tagline}
             </p>
           )}
@@ -120,7 +120,7 @@ export default async function DesignerPage({ params }: Props) {
               </p>
             )}
             {bioText && (
-              <div className="font-serif font-light text-dr-cream/70 text-lg leading-relaxed space-y-6">
+              <div className="font-serif font-light text-dr-cream/80 text-lg leading-relaxed space-y-6">
                 {bioText.split('\n\n').map((para, i) => (
                   <p key={i}>{para}</p>
                 ))}
@@ -134,7 +134,7 @@ export default async function DesignerPage({ params }: Props) {
                   href={`https://instagram.com/${designer.instagram}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-display text-dr-cream/40 text-[10px] tracking-widest uppercase hover:text-dr-gold transition-colors duration-300"
+                  className="font-display text-dr-cream/75 text-[10px] tracking-widest uppercase hover:text-dr-gold transition-colors duration-300"
                   style={{ textDecoration: 'none' }}
                 >
                   @{designer.instagram}
@@ -145,7 +145,7 @@ export default async function DesignerPage({ params }: Props) {
                   href={designer.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-display text-dr-cream/40 text-[10px] tracking-widest uppercase hover:text-dr-gold transition-colors duration-300"
+                  className="font-display text-dr-cream/75 text-[10px] tracking-widest uppercase hover:text-dr-gold transition-colors duration-300"
                   style={{ textDecoration: 'none' }}
                 >
                   Website
@@ -214,7 +214,7 @@ export default async function DesignerPage({ params }: Props) {
                         <div className="absolute inset-0 bg-dr-card" />
                       )}
                       {piece.isAvailable === false && (
-                        <div className="absolute top-4 left-4 font-display text-[9px] tracking-widest uppercase text-dr-cream/60 bg-dr-black/80 px-3 py-1">
+                        <div className="absolute top-4 left-4 font-display text-[9px] tracking-widest uppercase text-dr-cream/75 bg-dr-black/80 px-3 py-1">
                           Sold
                         </div>
                       )}
@@ -223,7 +223,7 @@ export default async function DesignerPage({ params }: Props) {
                     {/* Details */}
                     <h3 className="font-serif text-dr-cream text-xl mb-2">{piece.title}</h3>
                     {piece.description && (
-                      <p className="font-serif font-light text-dr-cream/50 text-sm leading-relaxed mb-3">
+                      <p className="font-serif font-light text-dr-cream/80 text-sm leading-relaxed mb-3">
                         {piece.description}
                       </p>
                     )}
@@ -234,13 +234,13 @@ export default async function DesignerPage({ params }: Props) {
                         </p>
                       ) : <span />}
                       {piece.materials && (
-                        <p className="font-display text-dr-cream/30 text-[9px] tracking-widest uppercase">
+                        <p className="font-display text-dr-cream/80 text-[9px] tracking-widest uppercase">
                           {piece.materials}
                         </p>
                       )}
                     </div>
                     {piece.sizes?.length ? (
-                      <p className="font-display text-dr-cream/30 text-[9px] tracking-widest uppercase mt-2">
+                      <p className="font-display text-dr-cream/80 text-[9px] tracking-widest uppercase mt-2">
                         {piece.sizes.join(' · ')}
                       </p>
                     ) : null}
@@ -268,7 +268,7 @@ export default async function DesignerPage({ params }: Props) {
         >
           Book a Private Styling Appointment
         </h2>
-        <p className="font-serif text-dr-cream/50 text-base mb-12 max-w-md mx-auto leading-relaxed">
+        <p className="font-serif text-dr-cream/80 text-base mb-12 max-w-md mx-auto leading-relaxed">
           Experience the collection one-on-one with a personal stylist at 147 Reade St.
         </p>
         <a
@@ -287,7 +287,7 @@ export default async function DesignerPage({ params }: Props) {
           <div className="h-px w-full mb-10" style={{ background: 'rgba(201,169,110,0.2)' }} />
           <Link
             href="/"
-            className="font-display text-dr-cream/30 text-[10px] tracking-widest uppercase hover:text-dr-gold transition-colors duration-300"
+            className="font-display text-dr-cream/80 text-[10px] tracking-widest uppercase hover:text-dr-gold transition-colors duration-300"
             style={{ textDecoration: 'none' }}
           >
             ← Back to Designer Residence

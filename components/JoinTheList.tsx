@@ -60,7 +60,7 @@ export default function JoinTheList() {
             Be the first to know.
           </h2>
 
-          <p className="font-serif text-dr-cream/50 text-center text-base leading-relaxed mb-14">
+          <p className="font-serif text-dr-cream/80 text-center text-base leading-relaxed mb-14">
             Private previews, new residencies, and exclusive access — delivered quietly to your inbox.
           </p>
         </FadeIn>
@@ -71,7 +71,7 @@ export default function JoinTheList() {
             <p className="font-display text-dr-gold text-xs tracking-widest uppercase mb-4">
               You're on the list
             </p>
-            <p className="font-serif text-dr-cream/60 text-base">
+            <p className="font-serif text-dr-cream/75 text-base">
               Thank you. We'll be in touch.
             </p>
             <div className="h-px w-16 mx-auto mt-10" style={{ background: 'rgba(201,169,110,0.4)' }} />
@@ -164,7 +164,7 @@ function Field({ label, name, value, onChange, type = 'text', required }: FieldP
       />
       <label
         htmlFor={name}
-        className="absolute left-0 top-0 font-display text-[10px] tracking-widest uppercase text-dr-cream/30 peer-placeholder-shown:top-5 peer-placeholder-shown:text-sm peer-placeholder-shown:tracking-normal peer-placeholder-shown:font-serif peer-focus:top-0 peer-focus:text-[10px] peer-focus:tracking-widest peer-focus:font-display peer-focus:text-dr-gold/70 transition-all duration-200"
+        className="absolute left-0 top-0 font-display text-[10px] tracking-widest uppercase text-dr-cream/80 peer-placeholder-shown:top-5 peer-placeholder-shown:text-sm peer-placeholder-shown:tracking-normal peer-placeholder-shown:font-serif peer-focus:top-0 peer-focus:text-[10px] peer-focus:tracking-widest peer-focus:font-display peer-focus:text-dr-gold/70 transition-all duration-200"
       >
         {label}
       </label>

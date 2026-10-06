@@ -67,7 +67,7 @@ export default async function Hero() {
           {designer ? 'Now In Residence' : 'A Curated Fashion Experience'}
         </p>
 
-        <p className="font-display text-dr-cream/60 text-xs tracking-widest uppercase mb-10">
+        <p className="font-display text-dr-cream/75 text-xs tracking-widest uppercase mb-10">
           Tribeca · New York
         </p>
 
@@ -91,7 +91,7 @@ export default async function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-dr-cream/40">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-dr-cream/75">
         <span className="font-display text-[9px] tracking-widest uppercase">Scroll</span>
         <div className="w-px h-10 bg-dr-gold/40 animate-pulse" />
       </div>

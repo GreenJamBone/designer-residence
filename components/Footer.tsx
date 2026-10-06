@@ -16,7 +16,7 @@ export default function Footer() {
             <p className="font-display text-dr-gold/60 text-[10px] tracking-widest uppercase mb-6">
               Tribeca
             </p>
-            <p className="font-serif text-dr-cream/40 text-sm leading-relaxed">
+            <p className="font-serif text-dr-cream/75 text-sm leading-relaxed">
               A rotating residency for exceptional designers.<br />
               A curated fashion experience.
             </p>
@@ -27,11 +27,11 @@ export default function Footer() {
             <p className="font-display text-dr-gold text-[10px] tracking-widest uppercase mb-6">
               Visit
             </p>
-            <address className="not-italic font-serif text-dr-cream/60 text-sm leading-loose">
+            <address className="not-italic font-serif text-dr-cream/75 text-sm leading-loose">
               147 Reade St<br />
               Tribeca, NY 10013
             </address>
-            <div className="mt-6 font-serif text-dr-cream/40 text-sm leading-loose">
+            <div className="mt-6 font-serif text-dr-cream/75 text-sm leading-loose">
               <p>Monday – Friday &nbsp; 11am – 7pm</p>
               <p>Saturday &nbsp; 10am – 7pm</p>
               <p>Sunday &nbsp; 12pm – 6pm</p>
@@ -47,7 +47,7 @@ export default function Footer() {
               href="https://www.instagram.com/designerresidence"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-serif text-dr-cream/60 text-sm hover:text-dr-gold transition-colors duration-300 block mb-3"
+              className="font-serif text-dr-cream/75 text-sm hover:text-dr-gold transition-colors duration-300 block mb-3"
               style={{ textDecoration: 'none' }}
             >
               @designerresidence
@@ -55,7 +55,7 @@ export default function Footer() {
             <a
               href="mailto:info@designerresidence.com"
 
-              className="font-serif text-dr-cream/60 text-sm hover:text-dr-gold transition-colors duration-300 block"
+              className="font-serif text-dr-cream/75 text-sm hover:text-dr-gold transition-colors duration-300 block"
               style={{ textDecoration: 'none' }}
             >
               info@designerresidence.com

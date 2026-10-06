@@ -78,13 +78,13 @@ export default async function CurrentlyInResidence() {
             </h2>
 
             {designer.tagline && (
-              <p className="font-display text-dr-cream/50 text-xs tracking-widest uppercase mb-8">
+              <p className="font-display text-dr-cream/80 text-xs tracking-widest uppercase mb-8">
                 {designer.tagline}
               </p>
             )}
 
             {bioExcerpt && (
-              <p className="font-serif font-light text-dr-cream/70 text-lg leading-relaxed mb-12 max-w-md">
+              <p className="font-serif font-light text-dr-cream/80 text-lg leading-relaxed mb-12 max-w-md">
                 {bioExcerpt.length > 220 ? bioExcerpt.slice(0, 220).trimEnd() + '…' : bioExcerpt}
               </p>
             )}
