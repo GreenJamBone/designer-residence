@@ -32,9 +32,9 @@ export default function Footer() {
               Tribeca, NY 10013
             </address>
             <div className="mt-6 font-serif text-dr-cream/75 text-sm leading-loose">
-              <p>Monday – Friday &nbsp; 11am – 7pm</p>
-              <p>Saturday &nbsp; 10am – 7pm</p>
-              <p>Sunday &nbsp; 12pm – 6pm</p>
+              <p>Monday &nbsp; Closed</p>
+              <p>Tuesday – Friday &nbsp; 11am – 7pm</p>
+              <p>Saturday – Sunday &nbsp; 12pm – 5pm</p>
             </div>
           </div>
 
@@ -44,17 +44,14 @@ export default function Footer() {
               Connect
             </p>
             <a
-              href="https://www.instagram.com/designerresidence"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+19172452876"
               className="font-serif text-dr-cream/75 text-sm hover:text-dr-gold transition-colors duration-300 block mb-3"
               style={{ textDecoration: 'none' }}
             >
-              @designerresidence
+              917-245-2876
             </a>
             <a
               href="mailto:info@designerresidence.com"
-
               className="font-serif text-dr-cream/75 text-sm hover:text-dr-gold transition-colors duration-300 block"
               style={{ textDecoration: 'none' }}
             >
@@ -70,8 +67,20 @@ export default function Footer() {
           className="pt-8"
           style={{ borderTop: '1px solid rgba(201,169,110,0.2)' }}
         >
-          <p className="font-display text-dr-cream/20 text-[10px] tracking-widest uppercase text-center">
+          <p className="font-display text-dr-cream/50 text-[10px] tracking-widest uppercase text-center">
             © {new Date().getFullYear()} Designer Residence. All rights reserved.
+          </p>
+          <p className="font-display text-dr-cream/50 text-[10px] tracking-widest uppercase text-center mt-3">
+            Created by{' '}
+            <a
+              href="https://www.jamcreativetech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-dr-gold transition-colors duration-300"
+              style={{ textDecoration: 'none' }}
+            >
+              JAM Creative &amp; Technology
+            </a>
           </p>
         </div>
 
