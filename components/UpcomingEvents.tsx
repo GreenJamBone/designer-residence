@@ -1,4 +1,5 @@
-import { client } from '@/lib/sanity'
+import Image from 'next/image'
+import { client, urlFor } from '@/lib/sanity'
 import FadeIn from '@/components/FadeIn'
 
 async function getUpcomingEvents() {
@@ -12,7 +13,10 @@ async function getUpcomingEvents() {
       description,
       location,
       rsvpLink,
-      rsvpEmail
+      rsvpEmail,
+      image,
+      "imageAlt": image.alt,
+      "imageRatio": image.asset->metadata.dimensions.aspectRatio
     }`
   )
 }
@@ -44,6 +48,9 @@ type Event = {
   location?: { name?: string; address?: string; notes?: string }
   rsvpLink?: string
   rsvpEmail?: string
+  image?: unknown
+  imageAlt?: string
+  imageRatio?: number
 }
 
 export default async function UpcomingEvents() {
@@ -66,6 +73,10 @@ export default async function UpcomingEvents() {
             const { day, month, year, time, weekday } = formatDate(event.date)
             const descText = event.description ? getBioText(event.description) : null
             const rsvp = event.rsvpLink || (event.rsvpEmail ? `mailto:${event.rsvpEmail}` : null)
+            const ratio = event.imageRatio ?? 0.77
+            const thumbW = 360
+            const thumbUrl = event.image ? urlFor(event.image).width(thumbW).quality(85).url() : null
+            const fullUrl = event.image ? urlFor(event.image).width(2000).quality(90).url() : null
 
             return (
               <FadeIn key={event._id} delay={i * 100}>
@@ -88,7 +99,8 @@ export default async function UpcomingEvents() {
                   </div>
 
                   {/* Content column */}
-                  <div>
+                  <div className="flex flex-col-reverse md:flex-row md:items-start gap-8">
+                  <div className="flex-1">
                     <p className="font-display text-dr-cream/75 text-[10px] tracking-widest uppercase mb-3">
                       {weekday} · {time}
                       {event.location?.name ? ` · ${event.location.name}` : ''}
@@ -121,6 +133,26 @@ export default async function UpcomingEvents() {
                         RSVP
                       </a>
                     )}
+                  </div>
+
+                  {thumbUrl && fullUrl && (
+                    <a
+                      href={fullUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${event.title} flier full size`}
+                      className="block shrink-0 w-full max-w-[220px] md:w-[220px]"
+                    >
+                      <Image
+                        src={thumbUrl}
+                        alt={event.imageAlt ?? `${event.title} flier`}
+                        width={thumbW}
+                        height={Math.round(thumbW / ratio)}
+                        className="w-full h-auto"
+                        style={{ border: '1px solid rgba(201,169,110,0.2)' }}
+                      />
+                    </a>
+                  )}
                   </div>
 
                 </div>
